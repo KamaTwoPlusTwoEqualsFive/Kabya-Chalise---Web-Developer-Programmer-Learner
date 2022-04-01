@@ -1,0 +1,321 @@
+    /* linking url for the fonts */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono:ital,wght@1,300&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono&display=swap'); */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+    * {
+        /* *denote the body so the given property is for the body */
+        /* Here the margin and padding is 0 so there is no space around the side */
+        margin: 0;
+        padding: 0;
+    }
+    /* sidebar is the div used in html file */
+    
+    .sidebar {
+        position: absolute;
+        /* Making the background color of side bar containg bar and name red */
+        background-color: rgba(0, 0, 0, 0.616);
+        /* 20% width is given  */
+        /* Giving font style */
+        font-family: 'Fira Sans', sans-serif;
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar nav {
+        /* Givng space around from inside the nav */
+        padding: 45px;
+        /* 100% area vertically for height */
+        height: 100vh;
+    }
+    
+    .sidebar nav li {
+        /* making the dot go from the ul as default */
+        list-style: none;
+        /* giving the li font some size */
+        font-size: 30px;
+        /* 33px space around up and down by 33px and left right by 0 from inside */
+        padding: 33px 0;
+    }
+    
+    .sidebar nav li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    /* Div having mae */
+    
+    .main {
+        /* Making the bacground color yellow */
+        /* background-color: yellow; */
+        /* 90% width is given  */
+        width: 90vw;
+    }
+    
+    .container {
+        /* makes the layout of child side by side*/
+        display: flex;
+    }
+    /* Giving some div property to the div having class infocontainer */
+    
+    .infocontainer {
+        /* making background color blue i guess */
+        /* background-color: rgb(86, 78, 161); */
+        /* making its height 75 vh which means 45% height is given  */
+        height: 60vh;
+        /* Giving the width of 80% to the infocontainer */
+        width: 80vw;
+        /* margin set to 144px for up and down and auto "center" for left and right */
+        margin: 144px auto;
+        /* making flex for its child */
+        display: flex;
+        /* space around makes the content equally space between items */
+        justify-content: flex-end;
+    }
+    /* devinfo is the div inside infocontainer */
+    
+    .devInfo {
+        /* flex makes the items side by side */
+        display: flex;
+        /* making the flex direction column now it is gonna be in a line formant */
+        flex-direction: column;
+        /* making all the items go to center */
+        justify-content: center;
+        /* giving font family */
+        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+    }
+    /* giving some desing to helo name about inside devinfo div */
+    
+    .hello {
+        /* giving hello font size accordingly */
+        font-size: 50px;
+    }
+    
+    .name {
+        /* giving class name font size weight and famiy */
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+    }
+    
+    .about {
+        /* giving class about font size accordingly */
+        font-size: 45px;
+    }
+    /* declaring moreabout class of div to give features */
+    
+    .moreabout {
+        /* give size to the font */
+        font-size: 20px;
+        /* giving upper some spaces outsides */
+        margin-top: 18px;
+        /* giving style to the text in div moreabout */
+        font-family: 'Fira Sans', sans-serif;
+    }
+    
+    .button {
+        margin-top: 34px;
+    }
+    
+    .btn {
+        /* giving button inside class button font size accordingly */
+        font-size: 19px;
+        /* giving margn 0px to up and donw while giving 7px to right and left */
+        margin: 0px 7px;
+        /* givng padding form inside 7px*/
+        padding: 7px;
+        /* Givng background color blue */
+        background-color: rgb(255, 255, 255);
+        /* Givng color white to the text color */
+        color: rgb(0, 0, 0);
+        /* making the sharp edge round */
+        border-radius: 19px;
+    }
+    /* declaring div hover to change the button when it is hover over */
+    
+    .btn:hover {
+        /*making its color blue when hover */
+        color: rgb(255, 255, 255);
+        /* making the background color white when hover */
+        background-color: rgb(0, 0, 0);
+    }
+    /* dev img is one of the two div inside infocontainer */
+    
+    .devPic img {
+        /* giving the image width same as infocontainer */
+        height: 80vh;
+    }
+    /* giving div having name contactform desing */
+    
+    .contactform {
+        margin: 100px 288px;
+        /* font family declaration */
+        font-family: 'Fira Sans', sans-serif;
+    }
+    /* giving h1 inside div contactform some decoration */
+    
+    .contactform h1 {
+        /* font-family declaration */
+        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        /* text-align declaration to the center to make the text goes to center */
+        /* text-align: center; */
+        padding: 12px 0;
+        margin-bottom: 13px;
+    }
+    /* giving div inside form some design  */
+    
+    .contactform form div {
+        /* declaring padding top and bottom with right and left */
+        padding: 10px 0;
+        /* declaring flex property looks side my side auto row flex direction */
+        display: flex;
+        /* declaring flex direction colunm make its items in column */
+        flex-direction: column;
+    }
+    
+    .contactform form div input {
+        /* declare margin of 6px up and 0 at left down ringht */
+        margin: 6px 0 0 0;
+        /* making its sharp edge curv */
+        border-radius: 4px;
+        /* giing space form inside so the text can be display well */
+        width: 19vw;
+        /* declaring font size of 14px */
+        font-size: 14px;
+        /* declaring padding from outside */
+        padding: 3px;
+    }
+    /* giving div id having emailHelp some design */
+    
+    #emailHelp {
+        padding: 2px 0 0 0;
+        /* declaring font-size */
+        font-size: 12px;
+        /* declaring font color */
+        color: midnightblue;
+        /* giving up down and right left margin */
+        margin: 0 5px;
+    }
+    
+    #form-check {
+        /* declaring flex-direction row so the checkbox and the text are align together */
+        flex-direction: row;
+    }
+    
+    #form-check input {
+        /* Giving widthe 12px  */
+        width: 12px;
+        /* declarint margin 3px up and down and 8px right and left */
+        margin: 3px 8px;
+    }
+    
+    .btn-sm {
+        margin: 12px 0;
+        font-size: 17px;
+        padding: 6px 13px;
+    }
+    
+    .blogItem {
+        margin: 20px;
+        font-family: 'Fira Sans', sans-serif;
+    }
+    
+    .blogContainer {
+        margin: 100px 288px;
+    }
+    
+    h1 {
+        font-family: 'Fira Sans', sans-serif;
+        margin: 23px;
+    }
+    
+    p {
+        font-family: 'Roboto Mono', monospace;
+    }
+    
+    .intro {
+        margin: 100px 288px;
+    }
+    
+    .intro h2 {
+        font-family: 'Fira Sans', sans-serif;
+        margin: 12px;
+    }
+    
+    .intro p {
+        font-family: 'Roboto Mono', monospace;
+        margin: 12px;
+    }
+    
+    .skillContainer {
+        padding: 12px;
+    }
+    
+    .skillItem {
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 900;
+    }
+    
+    .skill {
+        width: 265px;
+        height: 11px;
+        background-color: red;
+        border: 2px solid black;
+    }
+    
+    .hundered {
+        width: 265px;
+        background-color: green;
+    }
+    
+    .fifty {
+        width: 125px;
+        background-color: blueviolet;
+    }
+    
+    .t5 {
+        width: 75px;
+        background-color: blue;
+    }
+    
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .cross {
+        margin: 8px;
+        margin-left: 160px;
+    }
+    
+    .ham {
+        margin: 8px;
+    }
+    
+    .sidebarGo {
+        transform: translate(-443px, 10px);
+        position: absolute;
+    }
+    
+    @media (max-width: 1600px) {
+        /* .sidebar {
+        transform: translate(-443px, 10px);
+        position: absolute;
+    } */
+        .devPic {
+            display: none;
+        }
+        .intro,
+        .blogContainer {
+            margin: 50px 8px;
+        }
+        .contactform {
+            padding: 034px;
+            margin: 0 88px;
+        }
+    }

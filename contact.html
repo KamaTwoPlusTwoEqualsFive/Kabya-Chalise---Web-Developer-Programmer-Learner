@@ -1,0 +1,100 @@
+<!-- Gives information about the html version used -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head will contain all the metadata of the page -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Giving the title of the page  -->
+    <title>Kabya Chalise - Web Developer, Programmer, Learner</title>
+    <!-- linking the page with the css for the desing in it -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Body wil contains all the contents that is show to the user -->
+
+<body>
+    <!-- Div is a part which can be desing using css or simply it is use to give desing in a proper manner -->
+    <!-- The whole display part is in the div called container -->
+    <div class="container">
+        <!-- Here we can see there is a div give which name or class for calling it is sidebar -->
+        <div class="sidebar sidebarGo">
+            <!-- Giving some text -->
+            <!-- Kabya -->
+            <!-- nav is used for the negivation bar -->
+            <nav>
+                <!-- ul denote it is unordered list -->
+                <ul>
+                    <!-- li denote the list items -->
+                    <li>
+                        <a href="/"> Home</a>
+                    </li>
+                    <li>
+                        <a href="/intro.html"> MY Intro</a>
+                    </li>
+                    <li>
+                        <a href="/blog.html"> Blog</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html"> Contact</a>
+                    </li>
+                    <!-- <li>
+                        <a href="/services.html"> Services</a>
+                    </li> -->
+                </ul>
+            </nav>
+        </div>
+        <!-- Here is an anothe div haveing class name main which is considered as the main part of the website -->
+        <div class="main">
+            <div class="hamburger">
+                <img src="menu.png" class="ham" alt="" width="23p x">
+                <img src="close.png " class="cross" alt=" " width="23px ">
+            </div>
+            <!-- This contact form will show all the thing that a person who visit my site can seen -->
+            <!-- givng div contactform to contact form section -->
+            <div class="contactform">
+                <!-- form tag -->
+                <h1>
+
+                    Contact me for work/general Enquiries</h1>
+                <form>
+                    <!-- a div for email text field -->
+
+                    <div class="mb-3">
+                        <!-- lable to make thing in their palce -->
+                        <label for="name" class="form-label">Name</label>
+                        <!-- input according to the info -->
+                        <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
+                        <!-- div for some text -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientphone" class="form-label">Phone no</label>
+                        <input type="phone no" class="form-control" id="clientphone">
+                    </div>
+                    <div class="mb-3">
+                        <!-- lable to make thing in their palce -->
+                        <label for="clientemail" class="form-label">Email address</label>
+                        <!-- input according to the info -->
+                        <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                        <!-- div for some text -->
+                        <div id="emailHelp" class="form-text">We'll never share your private information with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Enquiries" class="form-label">Enquiries</label>
+                        <input type="name" class="form-control" id="Enquiries" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3" id="form-check">
+                        <input type="checkbox" class="form-check-input " id="isclient ">
+                        <label class="form-check-label " for="isclient ">I want you to work on a project with me.</label>
+                    </div>
+                    <button type="submit " class="btn btn-sm ">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js "></script>
+
+</body>
+
+</html>
